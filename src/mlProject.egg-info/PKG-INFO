@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mlProject
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/susovanpatra00/E2E_ML_Project
+Author: susovanpatra00
+Author-email: susovanpatra00@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/susovanpatra00/E2E_ML_Project/issues
+Platform: UNKNOWN
+
+## Wine Quality Prediction
+
+1. Create Python Environment
+2. Connect to github repo
+3. Create the file 'template.py'
+4. Create other files using the 'template.py'
+5. Update 'requirements.txt'
+6. Update 'setup.py'
+7. Install Libraries for the environment using 'requirements.txt'
+
