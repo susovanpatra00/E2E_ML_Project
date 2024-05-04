@@ -10,7 +10,18 @@ from pathlib import Path
 from typing import Any
 
 """
-Instead of using Custom Exception we will use Box Exception with the help of BoxValueError
+* Instead of using Custom Exception we will use Box Exception with the help of BoxValueError
+* ConfigBox is used to simplify the process of accessing members of any thing. 
+  Eg- d = {"key": "val"},, here it is a "dictionary" type so to access the key valye the syntax is 
+          d["key"],,but we can make it very simple using ConfigBox
+      d = ConfigBox({"key": "val"}),,then d is a type of "ConfigBox" and now we can directly use
+          d.key to access the key value
+   That's why in all the functions here I am returning a ConfigBox type,,not any dict or nparray etc.
+* ensure_annotations - It will help me in ensuring the correct annotations, like in a function if 2 
+  input parameters tpe of int specified,,but if we give one int and other one as string,, it will not
+  throw error,,,it will run but not the way we want,,,so to ensure the annotations we use this ,,it will
+  throw error if the inputs are of different type
+* 
 """
 
 
