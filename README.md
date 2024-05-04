@@ -7,3 +7,4 @@
 5. Update 'requirements.txt'
 6. Update 'setup.py'
 7. Install Libraries for the environment using 'requirements.txt'
+8. Implement Logging
