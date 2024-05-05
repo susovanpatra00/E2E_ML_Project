@@ -168,6 +168,6 @@ MLflow
  - Trace all of your expriements
  - Logging & tagging your model
 
-I used MLflow to select the best parameters for my model between 5 different parameter sets. Below is the example of that.
+I used MLflow to select the best parameters for my model between 5 different parameter sets. Below is the example of that. I needed rmse low and r2 score high which I can easily select from the below image and set those values as my parameter value. It's one way of Hyperparameter Tuning.
 ![MLflow Model Comparison With Different Parameters](MLflow.png)
 
