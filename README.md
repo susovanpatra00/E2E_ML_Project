@@ -18,8 +18,8 @@
     (Entity -> Configuration Manager -> Components -> Pipeline)
 14. Now we will just copy paste the portions to their respective places
     (Entity -> src/entity/config_entity.py) (Configuration Manager -> src/config/configuration.py)
-    (Data Ingestion -> src/components/data_ingestion.py) 
-    (DataIngestion -> pipeline/stage_01_data_ingestion.py)
+    (Components -> src/components/data_ingestion.py) 
+    (Pipeline -> src/pipeline/stage_01_data_ingestion.py)
 15. 
 
 
