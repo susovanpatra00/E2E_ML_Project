@@ -168,4 +168,6 @@ MLflow
  - Trace all of your expriements
  - Logging & tagging your model
 
+I used MLflow to select the best parameters for my model between 5 different parameter sets. Below is the example of that.
+![Alt Text]([image_url](https://drive.google.com/file/d/1qVovEMwsqu7tlkmnm8PoOao2RB4U3EXJ/view?usp=drive_link))
 
