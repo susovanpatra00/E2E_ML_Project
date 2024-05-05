@@ -1,6 +1,6 @@
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
-from mlProject.config.configuaration import ConfigurationManager
+from mlProject.config.configuration import ConfigurationManager
 from mlProject.components.data_ingestion import DataIngestion
 from mlProject import logger
 

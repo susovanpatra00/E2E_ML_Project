@@ -1,4 +1,4 @@
-from mlProject.config.configuaration import ConfigurationManager
+from mlProject.config.configuration import ConfigurationManager
 from mlProject.components.data_validation import DataValiadtion
 from mlProject import logger
 
