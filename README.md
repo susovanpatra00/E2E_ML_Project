@@ -169,5 +169,5 @@ MLflow
  - Logging & tagging your model
 
 I used MLflow to select the best parameters for my model between 5 different parameter sets. Below is the example of that.
-![MLflow Model Comparison With Different Parameters](https://drive.google.com/file/d/1qVovEMwsqu7tlkmnm8PoOao2RB4U3EXJ/view?usp=drive_link)
+![MLflow Model Comparison With Different Parameters](MLflow.png)
 
