@@ -1,29 +1,5 @@
 ## Wine Quality Prediction
 
-1. Create Python Environment
-2. Connect to github repo
-3. Create the file 'template.py'
-4. Create other files using the 'template.py'
-5. Update 'requirements.txt'
-6. Update 'setup.py'
-7. Install Libraries for the environment using 'requirements.txt'
-8. Implement Logging in the src __init__.py as it will work for all inside the src
-9. Implement commonly used functions in utils/common.py 
-10. Now create a file '01_data_ingestion.ipynb' inside research for data ingestion research part.
-11. Our workflow is 1st config.yaml and as we will work for data ingestion,,we need to update the 
-    config.yaml for data ingestion related config
-12. We will update the src/constants/__init__.py ,, we will give the paths to the config, schema and 
-    params.yaml files
-13. We will complete the whole Data Ingestion process inside the '01_data_ingestion.ipynb'
-    (Entity -> Configuration Manager -> Components -> Pipeline)
-14. Now we will just copy paste the portions to their respective places
-    (Entity -> src/entity/config_entity.py) (Configuration Manager -> src/config/configuration.py)
-    (Components -> src/components/data_ingestion.py) 
-    (Pipeline -> src/pipeline/stage_01_data_ingestion.py)
-15. 
-
-
-
 
 
 
@@ -37,3 +13,159 @@
 7. Update the pipeline
 8. Update the main.py
 9. Update the dvc.yaml
+
+
+
+
+
+# How to run?
+### STEPS:
+
+Clone the repository
+
+```bash
+https://github.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow
+```
+### STEP 01- Create a conda environment after opening the repository
+
+```bash
+conda create -n mlproj python=3.8 -y
+```
+
+```bash
+conda activate mlproj
+```
+
+
+### STEP 02- install the requirements
+```bash
+pip install -r requirements.txt
+```
+
+
+```bash
+# Finally run the following command
+python app.py
+```
+
+Now,
+```bash
+open up you local host and port
+```
+
+
+
+## MLflow
+
+[Documentation](https://mlflow.org/docs/latest/index.html)
+
+
+##### cmd
+- mlflow ui
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow.mlflow \
+MLFLOW_TRACKING_USERNAME=entbappy \
+MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0 \
+python script.py
+
+Run this to export as env variables:
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/End-to-end-Machine-Learning-Project-with-MLflow.mlflow
+
+export MLFLOW_TRACKING_USERNAME=entbappy 
+
+export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
+
+```
+
+
+
+# AWS-CICD-Deployment-with-Github-Actions
+
+## 1. Login to AWS console.
+
+## 2. Create IAM user for deployment
+
+	#with specific access
+
+	1. EC2 access : It is virtual machine
+
+	2. ECR: Elastic Container registry to save your docker image in aws
+
+
+	#Description: About the deployment
+
+	1. Build docker image of the source code
+
+	2. Push your docker image to ECR
+
+	3. Launch Your EC2 
+
+	4. Pull Your image from ECR in EC2
+
+	5. Lauch your docker image in EC2
+
+	#Policy:
+
+	1. AmazonEC2ContainerRegistryFullAccess
+
+	2. AmazonEC2FullAccess
+
+	
+## 3. Create ECR repo to store/save docker image
+    - Save the URI: 566373416292.dkr.ecr.ap-south-1.amazonaws.com/mlproj
+
+	
+## 4. Create EC2 machine (Ubuntu) 
+
+## 5. Open EC2 and Install docker in EC2 Machine:
+	
+	
+	#optinal
+
+	sudo apt-get update -y
+
+	sudo apt-get upgrade
+	
+	#required
+
+	curl -fsSL https://get.docker.com -o get-docker.sh
+
+	sudo sh get-docker.sh
+
+	sudo usermod -aG docker ubuntu
+
+	newgrp docker
+	
+# 6. Configure EC2 as self-hosted runner:
+    setting>actions>runner>new self hosted runner> choose os> then run command one by one
+
+
+# 7. Setup github secrets:
+
+    AWS_ACCESS_KEY_ID=
+
+    AWS_SECRET_ACCESS_KEY=
+
+    AWS_REGION = us-east-1
+
+    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+
+    ECR_REPOSITORY_NAME = simple-app
+
+
+
+
+## About MLflow 
+MLflow
+
+ - Its Production Grade
+ - Trace all of your expriements
+ - Logging & tagging your model
+
+
